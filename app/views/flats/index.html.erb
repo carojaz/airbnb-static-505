@@ -1,0 +1,20 @@
+<h1 class="">Flats</h1>
+
+<div class="container">
+
+  <div class="row">
+    <%  @flats.each do |flat| %>
+      <div class="col-sm-4">
+
+        <%= link_to "/flats/#{flat['id']}" do %>
+          <%= render 'shared/card', flat: flat %>
+        <% end %>
+
+      </div>
+    <% end %>
+  </div>
+
+</div>
+
+
+

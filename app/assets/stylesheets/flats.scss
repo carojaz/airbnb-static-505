@@ -1,0 +1,79 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.card-trip {
+  height: 16em;
+  border-radius: 4px;
+  margin: 0.5em;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  &:hover {
+    text-decoration: none;
+    color: #6e5773;
+  }
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+  text-align: center;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+.card-trip-pricing {
+  text-align: right;
+  align-items: flex-end;
+  padding: 0;
+  width: 25%;
+}
+
+.img-show {
+  width: 300px;
+  margin: 1em;
+}
+
+#show {
+  text-align: center;
+  & h1 {
+    font-size: 24px;
+  }
+  & h6 {
+    font-size: 32px;
+    font-weight: lighter;
+  }
+}
